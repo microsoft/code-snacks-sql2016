@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlSecurity", "SqlSecurity\SqlSecurity.csproj", "{EA78066B-7E0A-43D1-BB81-B4C4E88C3CFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E996BB24-7C24-44D3-8407-CED2B6D0A156}"
+	ProjectSection(SolutionItems) = preProject
+		SQL Resources\Address.csv = SQL Resources\Address.csv
+		SQL Resources\AddressType.csv = SQL Resources\AddressType.csv
+		SQL Resources\AWBuildVersion.csv = SQL Resources\AWBuildVersion.csv
+		SQL Resources\BillOfMaterials.csv = SQL Resources\BillOfMaterials.csv
+		SQL Resources\BusinessEntity.csv = SQL Resources\BusinessEntity.csv
+		SQL Resources\BusinessEntityAddress.csv = SQL Resources\BusinessEntityAddress.csv
+		SQL Resources\BusinessEntityContact.csv = SQL Resources\BusinessEntityContact.csv
+		SQL Resources\Configure Masking.sql = SQL Resources\Configure Masking.sql
+		Configure Row Level Security.sql = Configure Row Level Security.sql
+		SQL Resources\ContactType.csv = SQL Resources\ContactType.csv
+		SQL Resources\CountryRegion.csv = SQL Resources\CountryRegion.csv
+		SQL Resources\CountryRegionCurrency.csv = SQL Resources\CountryRegionCurrency.csv
+		Create Contractor User.sql = Create Contractor User.sql
+		SQL Resources\Create Sample Database.sql = SQL Resources\Create Sample Database.sql
+		SQL Resources\CreditCard.csv = SQL Resources\CreditCard.csv
+		SQL Resources\Culture.csv = SQL Resources\Culture.csv
+		SQL Resources\Currency.csv = SQL Resources\Currency.csv
+		SQL Resources\CurrencyRate.csv = SQL Resources\CurrencyRate.csv
+		SQL Resources\Customer.csv = SQL Resources\Customer.csv
+		SQL Resources\Department.csv = SQL Resources\Department.csv
+		SQL Resources\Document.csv = SQL Resources\Document.csv
+		SQL Resources\EmailAddress.csv = SQL Resources\EmailAddress.csv
+		SQL Resources\Employee.csv = SQL Resources\Employee.csv
+		SQL Resources\EmployeeDepartmentHistory.csv = SQL Resources\EmployeeDepartmentHistory.csv
+		SQL Resources\EmployeePayHistory.csv = SQL Resources\EmployeePayHistory.csv
+		SQL Resources\ErrorLog.csv = SQL Resources\ErrorLog.csv
+		Explore Data with RLS.sql = Explore Data with RLS.sql
+		Explore Data.sql = Explore Data.sql
+		SQL Resources\Illustration.csv = SQL Resources\Illustration.csv
+		SQL Resources\JobCandidate.csv = SQL Resources\JobCandidate.csv
+		SQL Resources\JobCandidate_TOREMOVE.csv = SQL Resources\JobCandidate_TOREMOVE.csv
+		SQL Resources\Location.csv = SQL Resources\Location.csv
+		SQL Resources\Password.csv = SQL Resources\Password.csv
+		SQL Resources\Person.csv = SQL Resources\Person.csv
+		SQL Resources\PersonCreditCard.csv = SQL Resources\PersonCreditCard.csv
+		SQL Resources\PersonPhone.csv = SQL Resources\PersonPhone.csv
+		SQL Resources\PhoneNumberType.csv = SQL Resources\PhoneNumberType.csv
+		SQL Resources\Product.csv = SQL Resources\Product.csv
+		SQL Resources\ProductCategory.csv = SQL Resources\ProductCategory.csv
+		SQL Resources\ProductCostHistory.csv = SQL Resources\ProductCostHistory.csv
+		SQL Resources\ProductDescription.csv = SQL Resources\ProductDescription.csv
+		SQL Resources\ProductDocument.csv = SQL Resources\ProductDocument.csv
+		SQL Resources\ProductInventory.csv = SQL Resources\ProductInventory.csv
+		SQL Resources\ProductListPriceHistory.csv = SQL Resources\ProductListPriceHistory.csv
+		SQL Resources\ProductModel.csv = SQL Resources\ProductModel.csv
+		SQL Resources\ProductModelIllustration.csv = SQL Resources\ProductModelIllustration.csv
+		SQL Resources\ProductModelorg.csv = SQL Resources\ProductModelorg.csv
+		SQL Resources\ProductModelProductDescriptionCulture.csv = SQL Resources\ProductModelProductDescriptionCulture.csv
+		SQL Resources\ProductPhoto.csv = SQL Resources\ProductPhoto.csv
+		SQL Resources\ProductProductPhoto.csv = SQL Resources\ProductProductPhoto.csv
+		SQL Resources\ProductReview.csv = SQL Resources\ProductReview.csv
+		SQL Resources\ProductSubcategory.csv = SQL Resources\ProductSubcategory.csv
+		SQL Resources\ProductVendor.csv = SQL Resources\ProductVendor.csv
+		SQL Resources\PurchaseOrderDetail.csv = SQL Resources\PurchaseOrderDetail.csv
+		SQL Resources\PurchaseOrderHeader.csv = SQL Resources\PurchaseOrderHeader.csv
+		SQL Resources\SalesOrderDetail.csv = SQL Resources\SalesOrderDetail.csv
+		SQL Resources\SalesOrderHeader.csv = SQL Resources\SalesOrderHeader.csv
+		SQL Resources\SalesOrderHeaderSalesReason.csv = SQL Resources\SalesOrderHeaderSalesReason.csv
+		SQL Resources\SalesPerson.csv = SQL Resources\SalesPerson.csv
+		SQL Resources\SalesPersonQuotaHistory.csv = SQL Resources\SalesPersonQuotaHistory.csv
+		SQL Resources\SalesReason.csv = SQL Resources\SalesReason.csv
+		SQL Resources\SalesTaxRate.csv = SQL Resources\SalesTaxRate.csv
+		SQL Resources\SalesTerritory.csv = SQL Resources\SalesTerritory.csv
+		SQL Resources\SalesTerritoryHistory.csv = SQL Resources\SalesTerritoryHistory.csv
+		SQL Resources\ScrapReason.csv = SQL Resources\ScrapReason.csv
+		SQL Resources\Shift.csv = SQL Resources\Shift.csv
+		SQL Resources\ShipMethod.csv = SQL Resources\ShipMethod.csv
+		SQL Resources\ShoppingCartItem.csv = SQL Resources\ShoppingCartItem.csv
+		SQL Resources\SpecialOffer.csv = SQL Resources\SpecialOffer.csv
+		SQL Resources\SpecialOfferProduct.csv = SQL Resources\SpecialOfferProduct.csv
+		SQL Resources\StateProvince.csv = SQL Resources\StateProvince.csv
+		SQL Resources\Store.csv = SQL Resources\Store.csv
+		SQL Resources\TransactionHistory.csv = SQL Resources\TransactionHistory.csv
+		SQL Resources\TransactionHistoryArchive.csv = SQL Resources\TransactionHistoryArchive.csv
+		SQL Resources\UnitMeasure.csv = SQL Resources\UnitMeasure.csv
+		SQL Resources\Vendor.csv = SQL Resources\Vendor.csv
+		SQL Resources\WorkOrder.csv = SQL Resources\WorkOrder.csv
+		SQL Resources\WorkOrderRouting.csv = SQL Resources\WorkOrderRouting.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA78066B-7E0A-43D1-BB81-B4C4E88C3CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA78066B-7E0A-43D1-BB81-B4C4E88C3CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA78066B-7E0A-43D1-BB81-B4C4E88C3CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA78066B-7E0A-43D1-BB81-B4C4E88C3CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
