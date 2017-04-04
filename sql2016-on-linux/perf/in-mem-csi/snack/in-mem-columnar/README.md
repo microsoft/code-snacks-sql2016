@@ -1,22 +1,21 @@
-# In-Memory & Columnar Store Code Snack (SQL Server 2016)
-In this code snack, developers will experience the benefit of performing real-time operation analytics enabled by leveraging a memory optimized table in combination with a columnstore index. The Visual Studio project contains a load generator that will be used to simulate a write heavy workload. They will initially run the simulator against a disk based table with a clustered index (btree) and take note of the rows inserted per second, and will measure the performance of a provided analytics query while the system is under the heavy write load. They will then author the T-SQL to create the memory optimized table with a columnstore index, update the load generator to target the memory optimized table and observe the improved performance characteristics. This code snack targets SQL Server on Linux.
+# In-Memory & Column Store 
+In this code snack you will see the benefits of memory optimized tables in combination with a columnstore index on analytical workloads. The sample project contains a load generator that will be used to simulate a write heavy workload. You will initially run the simulator against a disk based table with a clustered index (btree) and take note of the rows inserted per second, and will measure the performance of a provided analytics query while the system is under the heavy write load. Then you will edit the T-SQL to create the memory optimized table with a columnstore index, update the load generator to target the memory optimized table and observe the improved performance. 
 
 ## Requirements
-- Visual Studio 2015 with Update 3 (or later)
-- [SQL Server Data Tools for Visual Studio 2015](https://msdn.microsoft.com/en-us/mt186501) 
-- [SQL Server on Linux](https://www.microsoft.com/en-us/sql-server/sql-server-on-linux) running in [Docker](https://docs.docker.com/engine/installation/#/on-macos-and-windows)
-- Your SQL on Linux Server should have at least 4 GB of RAM
+- Visual Studio Code with the MSSQL extension or Visual Studio 2015 with Update 3 (or later) with SSDT
+- SQL Server 2016 or above, you can use the [SQL Server vNext on Linux](https://hub.docker.com/r/microsoft/mssql-server-linux/) docker image
+- In order to run SQL Server on docker, you'll need to edit the docker configuration to allow at least 4 GB of RAM
+The instructions assume that Visual Studio has been installed, but you can follow all the steps with teh mssql command line interface tools or with Visual Studio Code, just ignore the tool specific steps (i.e. Open the solution XXYY) and focus on the files that you'd need to edit or execute ;)
 
 ## Clone the provided project
-Clone this repo on to your local machine.
-The recommended path is C:\In-Memory and Columnar\
+Create a folder and clone this repo on to your local machine
 
 ## Download the sample data
 This project requires a sample set of data you will load into SQL Server.
 Download the data from: [http://bit.ly/2envb8m](http://bit.ly/2envb8m)
 
 ## Copy the sample data to your SQL on Linux host
-1. On your Docker host machine, first grab the container ID of your SQL Server on Linux container. The Container ID is the value present in the first column.
+1. Let's start by assuming that you've chosen a Docker based approach, grab the container ID of your SQL Server on Linux container. The Container ID is the value present in the first column.
 ```
 docker ps
 ```
@@ -46,6 +45,8 @@ drwxr-xr-x 3 root root 4.0K Nov 14 23:01 xtp
 5. You are all set to continue the lab in Visual Studio 2015.
 
 ## Create the database and tables
+Now you'll need to run few .sql scripts, you can do it using the command line tools, Visual Studio or Visual Studio Code with the MSSQL extension. Remember to adjust the FILENAME attributes if you installed SQL Server on a non default location.
+i.e. Steps for the Visual Studio approach
 1. Open the SqlLoadgenerator solution using Visual Studio 2015.
 2. From Solution Explorer, expand the SqlGenerator solution, then SQL Resources folder and open "Create Database.sql".
 3. Adjust the file paths for the FILENAME attributes if you installed SQL Server to a different location.
@@ -122,4 +123,4 @@ Repeat the query a few times, waiting a few seconds in between queries to get a 
 16. Close the console load generator.
 
 ## Conclusion
-You should observe that while neither query was affected by the heavy insert load, the query against the analytics query continued to run 2x-10x faster than the same query against the disk-based table.
+Et voilá! You should observe that while neither query was affected by the heavy insert load, the query against the analytics query continued to run 2x-10x faster than the same query against the disk-based table.
