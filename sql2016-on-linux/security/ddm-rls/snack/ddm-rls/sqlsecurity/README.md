@@ -1,9 +1,13 @@
-#  Dynamic Data Masking & Row Level Security Code Snack (SQL Server 2016)
-In this code snack, developers will create a database having human resources data, including a table containing simulated employee pay data. They will be guided thru the sample data to highlight the sensitive information it contains (e.g., social security numbers and salaries) and then configuring the masking of the sensitive data. In addition, they will enable Row Level Security to handle three different roles: contractors (who have no visibility to any rows except their own in the table), HR (who can view all employee rows except those of executives) and Executives (who can view all employee rows). They will complete a node.js application that queries the database to see the differing outcomes that result based on Row Level Security policy.
+#  Dynamic Data Masking & Row Level Security
+On this guide you'll see how to better protect information on your DB. We will use sample human resources data, including a table containing simulated employee pay data, and you will learn how to mask the sensitive data (e.g., social security numbers and salaries). In addition, you'll enable Row Level Security to handle three different roles: contractors (who have no visibility to any rows except their own in the table), HR (who can view all employee rows except those of executives) and Executives (who can view all employee rows). 
+
+You will see the different kinds of responses that a sample Node.js application will receive based on the Rol Level Security and Dynamic Data Masking features.
+
 
 ## Requirements
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [SQL Server on Linux](https://www.microsoft.com/en-us/sql-server/sql-server-on-linux)
+You can follow these steps on Linux, Mac OS or Windows, you will just need to change the version of the tools and server that you install.
+- [Visual Studio Code](https://code.visualstudio.com/download) with the MS SQL Server extension (ext install mssql-server)
+- [SQL Server on Linux](https://www.microsoft.com/en-us/sql-server/sql-server-on-linux) 
 - [Node.js](https://nodejs.org/en/download/)
 - [MSSQL extension for VS Code](https://marketplace.visualstudio.com/items?itemName=sanagama.vscode-mssql) 
 
@@ -23,7 +27,7 @@ Clone this repo on to your local machine.
             // All required inputs are present. No prompts when you choose this connection from the picklist.
             "server": "localhost",
             "database": "master",
-            "user": "sa",
+            "user": "sa", 
             "password": "Abc1234567890"
         },
         {
@@ -151,8 +155,8 @@ SELECT * FROM HumanResources.Employee;
 [RLS Data]: images/rlsresults.png "RLS Data"
 
 
-## Leverage Row Level Security from an Application
-1. Let’s put Row Level Security to work within the context of an application, in this case a node.js application.
+## Use Row Level Security from an Application
+1. Let’s put Row Level Security to work within the context of the node.js application.
 2. Within Visual Studio Code, open SqlClient.js located underneath the SqlSecurity folder root.
 3. Near the top, modify the values of the config element so that they contain the appropriate values to connect to your instance of the database.
 ```
